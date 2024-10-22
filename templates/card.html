@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .card p {
+            color: #777;
+            font-size: 16px;
+        }
+        .card .email {
+            color: #007BFF;
+            font-weight: bold;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://www.gravatar.com/avatar/?d=mp" alt="User Avatar">
+        <h2>{{ username }}</h2>
+        <p>Age: {{ age }}</p>
+        <p>Email: <span class="email">{{ email }}</span></p>
+    </div>
+</body>
+</html>
